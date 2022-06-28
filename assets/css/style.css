@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+/*rubik*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+/* ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body {
+  background-image: url("/assets/img/fondo.webp");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+*{
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background: rgba(4, 0, 0, 0.479);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);  
+}
+.container h1 {
+  color: rgb(255, 255, 255);
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  margin: 0.5em;
+}
+.container form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container form input {
+  height: 3em;
+  font-size: 15px;
+  margin: 0.5em;
+  width: 90%;
+  text-align: center;
+  border-radius: 15px;
+
+}
+.container form button {
+  height: 3em;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0.5em;
+  width: 90%;
+  border-radius: 15px;
+}
+.container form button:hover {
+  background-color: #6ced70c1;
+  cursor: pointer;
+}
+.respuesta {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-family: 'Koulen', cursive;
+  text-align: center;
+}
+/* CARD */
+.card{
+  color: #fff;
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  padding: 1em;
+  font-family: 'Ubuntu', sans-serif;
+    border-radius: 15px;
+
+}
+  @media only screen AND (min-width:800px) {
+  .card{
+    width: 300px;
+    /* border: 5px solid rgb(255, 255, 255); */
+    border-radius: 15px;
+   }
+  .aux{
+    color: #fff;
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 2em;
+    padding: 1em;
+    width: 80%;
+    margin: 0% 10% 0% 10%;
+  }
+  .card-style{
+    margin: 1em;
+    padding: 1em;
+    border-radius: 15px;
+
+   }
+   *{
+  /* border-radius: 15px; */
+}
+   #container-pizzas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-top: 0px;
+  }
+}
+.card__title{
+  text-align: center;
+  margin: 0.5em;
+
+}
+.card__img{
+  width: 90%;
+  margin: 0% 5% 0% 5%;
+    border-radius: 15px;
+
+}
+
+  @media only screen AND (min-width:800px) {
+    .card__img{
+      width: 100%;
+      margin: 0 auto;
+      border: 1px solid rgb(255, 255, 255);
+    }
+    .card__list__item{
+      margin: 0.5em;
+      width: 50%;
+
+    }
+  }
+.card__subtitle{
+  text-align: center;
+  margin: 0.5em;
+}
+.card__list{
+  margin:1em;
+}
+.card__list__item{
+  margin: 0.5em;
+  width: auto;
+}
+
+
+
+/* FOOTER */
+footer {
+  border-radius: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(97, 97, 97, 0.404);
+}
+
+.footer {
+  font-family: 'Rubik Mono One', sans-serif;
+  padding: 1.5em;
+  line-height: 1.4;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+ /* SPINER */
+#loading {
+  /* display: inline-block; */
+  display: none;
+  margin: 2em;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.card-style{
+  border: solid 1px rgb(148, 148, 148);
+  background-color: #fff;
+  color: #000000;
+  box-shadow: 0 8px 8px 0 rgba(255, 255, 255, 0.15);
+}
+
+.container{
+  border-radius: 0px;
+}
+.ocultar{
+  display: none;
+}
